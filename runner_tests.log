@@ -1,0 +1,14 @@
+2024-11-14 13:19:50,370 | WARNING | Неверный тип данных для объекта Runner | test_run
+Traceback (most recent call last):
+  File "C:\Users\Redmi\classwork\modul12\test12_4.py", line 72, in test_run
+    r2 = Runner(12345)
+  File "C:\Users\Redmi\classwork\modul12\test12_4.py", line 12, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано int
+2024-11-14 13:19:50,370 | WARNING | Неверная скорость для Runner | test_walk
+Traceback (most recent call last):
+  File "C:\Users\Redmi\classwork\modul12\test12_4.py", line 60, in test_walk
+    r1 = Runner('Вася', speed=-10) # создаем объект класса Runner с произвольным именем
+  File "C:\Users\Redmi\classwork\modul12\test12_4.py", line 17, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -10
